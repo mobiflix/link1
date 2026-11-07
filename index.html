@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Dito natin ginagawa yung checkered background */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Ito yung pattern */
+            background-color: #ffffff;
+            background-image: 
+                linear-gradient(45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(-45deg, #e0e0e0 25%, transparent 25%), 
+                linear-gradient(45deg, transparent 75%, #e0e0e0 75%), 
+                linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+
+        /* Para maging maayos yung image at walang space sa ilalim */
+        a {
+            display: inline-block;
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <a href='https://www.google.com' onclick=
+    window.open('https://uplcm.com/4/12210239');
+    window.open('https://www.stackoverflow.com/');
+    return true;>
+        <img src="https://raw.githubusercontent.com/mobiflix/yts/b0bfc2ad38d29462171a5d67e802f979d49d09ca/images.png" alt="Button Image">
+    </a>
+
+</body>
+</html>
