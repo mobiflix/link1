@@ -39,32 +39,14 @@
             margin: 0 auto;
         }
 
-        #timer {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 20px;
-            width: 100%;
-            padding: 0 16px;
-            word-wrap: break-word;
-        }
-
         #button-container {
-            display: none;
             text-align: center;
             width: 100%;
             padding: 0 16px;
-        }
-
-        #button-container.show {
-            display: block;
         }
     </style>
 </head>
 <body>
-
-    <div id="timer">Please wait: 5 seconds</div>
 
     <div id="button-container">
         <a href='page2.html' onclick="
@@ -75,23 +57,6 @@
             <img src="https://raw.githubusercontent.com/mobiflix/yts/0944f7e30f63f748f56a37115f4a8c04371af8b5/images~2.png" alt="Button Image">
         </a>
     </div>
-
-    <script>
-        let seconds = 5;
-        const timerEl = document.getElementById('timer');
-        const buttonContainer = document.getElementById('button-container');
-
-        const countdown = setInterval(() => {
-            seconds--;
-            if (seconds > 0) {
-                timerEl.textContent = `Please wait: ${seconds} second${seconds !== 1 ? 's' : ''}`;
-            } else {
-                clearInterval(countdown);
-                timerEl.style.display = 'none';
-                buttonContainer.classList.add('show');
-            }
-        }, 1000);
-    </script>
 
 </body>
 </html>
