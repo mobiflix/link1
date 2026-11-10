@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            background: #ffffff;
+            flex-direction: column;
+        }
+
+        a {
+            display: inline-block;
+            line-height: 0;
+        }
+
+        #timer {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        #button-container {
+            display: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        #button-container.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="timer">Please wait: 20 seconds</div>
+
+    <div id="button-container">
+        <a href='index.html' onclick=
+            window.open('https://uplcm.com/4/12210239');
+            window.open('https://www.stackoverflow.com/');
+            window.location.href='index.html';
+            return false;>
+            <img src="https://raw.githubusercontent.com/mobiflix/yts/0944f7e30f63f748f56a37115f4a8c04371af8b5/images~2.png" alt="Button Image">
+        </a>
+    </div>
+
+    <script>
+        let seconds = 20;
+        const timerEl = document.getElementById('timer');
+        const buttonContainer = document.getElementById('button-container');
+
+        const countdown = setInterval(() => {
+            seconds--;
+            if (seconds > 0) {
+                timerEl.textContent = `Please wait: ${seconds} second${seconds !== 1 ? 's' : ''}`;
+            } else {
+                clearInterval(countdown);
+                timerEl.style.display = 'none';
+                buttonContainer.classList.add('show');
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
