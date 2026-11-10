@@ -3,60 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Page 1</title>
-    <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 40px;
-            background: #ffffff;
-            flex-direction: column;
-        }
-
-        a {
-            display: inline-block;
-            line-height: 0;
-            max-width: 100%;
-        }
-
-        a img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        #button-container {
-            text-align: center;
-            width: 100%;
-            padding: 0 16px;
-        }
-    </style>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=page2.html">
+    <script>
+        window.location.replace('page2.html');
+    </script>
 </head>
 <body>
-
-    <div id="button-container">
-        <a href='page2.html' onclick="
-            window.open('https://uplcm.com/4/12210239');
-            window.open('https://www.stackoverflow.com/');
-            window.location.href='page2.html';
-            return false;">
-            <img src="https://raw.githubusercontent.com/mobiflix/yts/0944f7e30f63f748f56a37115f4a8c04371af8b5/images~2.png" alt="Button Image">
-        </a>
-    </div>
-
+    <p>Redirecting to <a href="page2.html">page 2</a>...</p>
 </body>
 </html>
